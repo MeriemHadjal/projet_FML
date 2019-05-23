@@ -1,0 +1,12 @@
+{
+    "name": "vendor/fml",
+    "authors": [
+        {
+            "name": "MeriemHadjal",
+            "email": "meriem.hadjalchateur@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0"
+    }
+}
