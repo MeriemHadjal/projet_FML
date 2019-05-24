@@ -2,17 +2,28 @@
 $uri = $_SERVER['REQUEST_URI'];
 $parts = explode('/', rtrim($uri, '/'));
 
+include_once('models/bdd.php');
+include_once('models/twig.php');
 
 // var_dump($parts);
 switch ($parts[3]) {
-    case "index";
-        // include_once('/view/index.html.twig');
+    case "base";
+        echo "babar";
+        break;
+
+
+    case "accueil";
         echo "babar";
         break;
 
 
     case "map";
-        echo "map";
+        $donnees = $bdd->query("SELECT * FROM parking_covoit");
+        $result = $donnees->fetchAll();
+        echo $twig->render('map.html.twig', [
+            "donnees" => $result
+        ]);
+
         break;
 
     case "mention";

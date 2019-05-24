@@ -1,12 +1,6 @@
 <?php
 
-require_once '/path/to/../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
-$loader = new \Twig\Loader\ArrayLoader([
-    'index' => 'Hello {{ name }}!',
-]);
-$twig = new \Twig\Environment($loader);
-
-echo $twig->render('index', ['index.html.twig']);
-
-?>
+$loader = new Twig_Loader_Filesystem('view');
+$twig = new Twig_Environment($loader);

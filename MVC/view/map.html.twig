@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+{% block link %}
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <meta content='initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'/>
+{% endblock %}
+{% block titre %}
+    Map
+    {# {{ bonjour }}
+                                                        
+                                                            {% for aire_covoit in donnees %}
+                                                                <p>Nom : {{ aire_covoit.adresse }}</p>
+                                                                {% endfor %} #}
+{% endblock %}
+{% block main %}
+    <div id="map" style="height:500px"></div>
+
+    {# {% for aire in donnees %}
+                            <ul>
+                                <li>
+                                    Ville :
+                                    {{aire.Ville}}</li>
+                            </ul> 
+                        {% endfor %} #}
+{% endblock %}
+{% block script %}
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+{% endblock %}
