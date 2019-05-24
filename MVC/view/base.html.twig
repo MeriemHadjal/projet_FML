@@ -1,3 +1,4 @@
+{% block meta %}
 <!DOCTYPE html>
 <html lang= "fr">
 <head>
@@ -20,8 +21,11 @@
 <meta property="og:title" content="">
 <meta property="og:description" content="">
 <meta property="og:image" content="">
+{% endblock meta %}
 <!--##################################################################### Titre #####################################################################-->
+    {% block titre %}
     <Title> Accueil</Title>
+    {% endblock titre %}
     </head>
 <!--##################################################################### En tête #####################################################################-->
     <header>
@@ -36,8 +40,10 @@
     
 <!--##################################################################### Footer #####################################################################-->
     <footer>
+    {% block footer %}
     <p>copyright&copy;creawebz</p>
     <a href="views/php/mention.html.twig">Mentions Legales</a>
-    </footer>
+   {% endblock footer %}
+   </footer>
     </body>
 </html>
