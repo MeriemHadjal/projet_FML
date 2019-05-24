@@ -1,27 +1,29 @@
 {% extends "base.html.twig" %}
 {% block link %}
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
-    <meta content='initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'/>
+    <link crossorigin="" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" rel="stylesheet"/>
 {% endblock %}
 {% block titre %}
     Map
     {# {{ bonjour }}
-                                                        
-                                                            {% for aire_covoit in donnees %}
-                                                                <p>Nom : {{ aire_covoit.adresse }}</p>
-                                                                {% endfor %} #}
+                                                                                    
+                                                                                        {% for aire_covoit in donnees %}
+                                                                                            <p>Nom : {{ aire_covoit.adresse }}</p>
+                                                                                            {% endfor %} #}
 {% endblock %}
 {% block main %}
     <div id="map" style="height:500px"></div>
 
     {# {% for aire in donnees %}
-                            <ul>
-                                <li>
-                                    Ville :
-                                    {{aire.Ville}}</li>
-                            </ul> 
-                        {% endfor %} #}
+                                                        <ul>
+                                                            <li>
+                                                                Ville :
+                                                                {{aire.Ville}}</li>
+                                                        </ul> 
+                                                    {% endfor %} #}
 {% endblock %}
 {% block script %}
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <script crossorigin="" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="http://localhost/projet_FML/MVC/view/assets/js/script.js"></script>
 {% endblock %}
