@@ -20,9 +20,14 @@ switch ($parts[3]) {
     case "map";
         $donnees = $bdd->query("SELECT * FROM parking_covoit");
         $result = $donnees->fetchAll();
+
         echo $twig->render('map.html.twig', [
             "donnees" => $result
         ]);
+
+
+    case "searchcode":
+        require_once "controller/searchcode.php";
 
         break;
 
