@@ -81,23 +81,23 @@ if (navigator.geolocation) {
                                         lumiere: item.lumiere,
                                         velo: item.velo,
                                     }).addTo(mymap);
-                                    html = "Ma position :<br>" +
-                                        item.lieu + "<br>" + "adresse : <br>" + item.adresse + '<br>' + item.code_postal + '<br>' +
-                                        "services : <br>" + item.type_de_parking + '<br>' + item.places + '<br>';
+                                    html = "<strong>Adresse : <br></strong>" + item.lieu + "<br>" + item.adresse + '<br>' + item.code_postal + '<br>' + item.ville + '<br>' +
+                                        '<br><strong>Type de parking</strong>' + '<br>' + item.type_de_parking + '<br>' +
+                                        "<strong>Services : <br></strong>";
                                     if (item.pmr === 1) {
-                                        html += '<img src="../view/assets/img/picto_pmr.png" alt=" places réservées pour personnes à mobilité réduite"><br>';
+                                        html += '<img  class ="logo" src="view/assets/img/picto_pmr.png" alt=" places réservées pour personnes à mobilité réduite">';
                                     }
                                     if (item.transport_public.length > 0) {
-                                        html += '<img src="../view/assets/img/picto_bus.png" alt="transport public à proximité"><br>';
+                                        html += ' <img class ="logo" src="view/assets/img/picto_bus.png" alt="transport public à proximité"><br> ';
                                     }
 
 
-                                    if (item.lumiere.length > 0) {
-                                        html += '<img src="../view/assets/img/picto_lumiere.png" alt="zone éclairée"><br>';
-                                    }
+                                    // if (item.lumiere.length > 0) {
+                                    //     html += '<img class ="logo" src="view/assets/img/picto_lumiere.png" alt="zone éclairée"><br>';
+                                    // }
 
                                     if (item.velo.length > 0) {
-                                        html += '<img src="view/assets/img/picto_velo.png" alt=" vélocité disponible"><br>';
+                                        html += '<img class ="logo" src="view/assets/img/picto_velo.png" alt=" vélocité disponible"><br>';
                                     }
 
                                     marker.bindPopup(html).openPopup();
