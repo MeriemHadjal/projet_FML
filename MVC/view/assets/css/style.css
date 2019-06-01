@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "baskerville";
+  src: url("../font/Baskerville_Bold_font.ttf");
+}
+
+@font-face {
+  font-family: "fira_bold";
+  src: url("../font/firasans-bold.otf");
+}
+
+@font-face {
+  font-family: "fira";
+  src: url("../font/firasans-regular.otf");
+}
+
+@font-face {
+  font-family: "fira_light";
+  src: url("../font/firasans-light.otf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -38,15 +58,82 @@
   margin: 0;
 }
 
-#accueil_bg {
-  background-image: url("../img/jambes.png");
+.accueil {
+  background-image: url("../img/legs-434918_1920.jpg");
   background-repeat: no-repeat;
-  height: 150vh;
+  height: 100vh;
 }
 
-#accueil_bg #bg_logo {
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-attachment: fixed;
+.accueil .container {
+  margin: 0;
+}
+
+.accueil .container #logo_app {
+  margin: 87px 0px 0 100px;
+}
+
+.accueil .container .titre_accueil h1 {
+  padding-top: 380px;
+  font-family: "baskerville";
+  font-size: 6em;
+}
+
+.accueil .container .titre_accueil #btn_begin {
+  text-decoration: none;
+  font-family: "fira_bold";
+  font-weight: 400;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid 1px black;
+  padding: 9px 30px 6px 30px;
+  margin-bottom: 40px;
+}
+
+.accueil .container .titre_accueil #btn_begin:hover {
+  background-color: black;
+}
+
+.mention {
+  padding-top: 50px;
+  background-image: url("../img/fond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mention h1 {
+  font-family: "fira_bold";
+}
+
+.mention h2 {
+  font-family: "fira_bold";
+  font-size: 1em;
+}
+
+.mention p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.8em;
+  font-family: "fira_light";
+}
+
+.mention span {
+  font-size: 1em;
+  font-family: "fira_bold";
+}
+
+.mention p a {
+  text-decoration: none;
+  font-family: "fira";
+  color: black;
+}
+
+.mention p a:hover {
+  text-decoration: none;
+  font-family: "fira";
+  color: #65653b;
+}
+
+.mention .part2 {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
