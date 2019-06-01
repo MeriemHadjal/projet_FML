@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+{% block titre %}
+ Accueil
+{% endblock %}
+
+{% block header %}
+<section class="container-fluid">
+<!-- Image and text -->
+<nav id = "navbar" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img id="logo_app"src="view/assets/img/izyco.png" width="30" height="30" class="d-inline-block align-top" alt="">
+
+  </a>
+</nav>
+
+<div id="accueil_bg"></div>
+<div id="bg_logo"></div>
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-6 offset-6 col-lg-3 offset-3 >
+<img id="logo_agence" src="assets/img/logo_blanc_creawebz.png" alt="logo agence Creawebz"/>
+</div>
+</div>
+</div>
+</section>
+{% endblock %}
+
+{% block main %}
+<section id="accueil_content class="container-fluid">
+<div class="container">
+<div class="row">
+<div class="col-9 offset-3>
+<h1> Facilitez <br> vos départs </h1>
+</div>
+<div class="offset-9 col-3>
+<a href="map"> COMMENCER</a>
+</div>
+</div>
+</div>
+</section>
+{% endblock %}

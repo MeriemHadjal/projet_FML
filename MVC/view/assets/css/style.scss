@@ -1,7 +1,12 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+
 .logo {
     width: 24px;
     height: 24px;
-
 }
 
 #saisie {
@@ -13,3 +18,47 @@
     justify-content: center;
     display: flex;
 }
+
+.container-fluid {
+    padding-left:0;
+    padding-right:0;
+    background-image: url('../img/fond.png');
+    background-repeat: no-repeat;
+    background-position: contain;
+    width: 100vw;
+    min-height: 100vh;
+
+    #navbar{
+        width:100vw;
+        position:fixed;
+        padding:0;
+        margin:0
+
+
+    }
+}
+
+        #accueil_bg {
+        background-image: url('../img/jambes.png');
+        background-repeat: no-repeat;
+        height: 150vh;
+
+        #bg_logo{
+            height:150px;
+            background-color: rgba(255,255,255,0.5);
+            background-attachment: fixed;
+            .container {
+
+                .row{
+
+                    .col-12{
+
+                        #logo_agence{
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }

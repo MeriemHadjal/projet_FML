@@ -13,7 +13,7 @@ switch ($parts[3]) {
 
 
     case "accueil";
-        echo "babar";
+        echo $twig->render('index.html.twig');
         break;
 
 
@@ -32,6 +32,6 @@ switch ($parts[3]) {
         break;
 
     case "mention";
-        echo "mention";
+        echo $twig->render('mention.html.twig');
         break;
 }
