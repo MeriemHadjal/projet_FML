@@ -51,9 +51,19 @@
         <!--#####################################################################Footer#####################################################################-->
         <footer>
             {% block footer %}
-                <p>copyright&copy;</p>
-                <img id="logo_agence" src="view/assets/img/logo_blanc_creawebz.png" alt="logo agence Creawebz">
-                <a href="mention">Mentions Legales</a>
+            <div class="container-fluid footer">
+            <div class="container">
+            <div class="row infos_footer">
+        
+                <div class="logo_footer mt-auto mb-auto">
+                <img id="logo_agence" src="view/assets/img/logo_blanc_creawebz.png" alt="logo agence Creawebz" width="62" height="58">
+                </div>
+                <div class="offset-10 mt-auto mb-auto">
+                <a href="mention" class="mentions_footer">Mentions légales</a>
+                </div>
+                </div>
+                </div>
+                </div>
             {% endblock %}
         </footer>
 
