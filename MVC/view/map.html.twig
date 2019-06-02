@@ -11,10 +11,21 @@
  
 
 {% block main %}
-    <form ><input type="search" id="saisie" placeholder="saisir votre adresse"> </form>
+    
     <div id="map" style="height:100vh"></div>
-
-
+<label for="adresse">Entrez votre adresse postale</label>
+                    <input type="text" name="adresse" id="adresse">
+<span>
+                        <ul id="suggestions">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </span>
+                    <input type="submit" class="btn" name="valider" value="Valider l'adresse" id="envoyer">
+                </form>
 {% endblock %}
 
 
@@ -23,6 +34,7 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 
     <script src="http://localhost/projet_FML/MVC/view/assets/js/script.js"></script>
-
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 {% endblock %}
 
