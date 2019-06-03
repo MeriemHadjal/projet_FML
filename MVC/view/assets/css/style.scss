@@ -2,21 +2,29 @@
   font-family: "baskerville";
   src: url("../font/Baskerville_Bold_font.ttf");
 }
+
 @font-face {
   font-family: "fira_bold";
   src: url("../font/firasans-bold.otf");
 }
+
 @font-face {
   font-family: "fira";
   src: url("../font/firasans-regular.otf");
 }
+
 @font-face {
   font-family: "fira_light";
   src: url("../font/firasans-light.otf");
 }
+
 * {
   padding: 0;
   margin: 0;
+
+}
+html{
+overflow: hidden; 
 }
 
 .logo {
@@ -24,23 +32,38 @@
   height: 24px;
 }
 
-#saisie {
-  min-height: 100px;
-  border: 1px solid white;
+.form {
+
+  border: 1px solid black;
   position: z-index 1;
   text-align: center;
   justify-content: center;
   display: flex;
+  list-style-type: none;
+  background-color:green;
+  
+  span {
+
+    ul {
+      list-style-type: none;
+      position: absolute;
+      li {
+        list-style-type: none;
+        
+
+      }
+    }
+  }
 }
 
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
-//   background-image: url("../img/fond.png");
-//   background-repeat: no-repeat;
-//   background-position: contain;
-//   width: 100vw;
-//   min-height: 100vh;
+  //   background-image: url("../img/fond.png");
+  //   background-repeat: no-repeat;
+  //   background-position: contain;
+  //   width: 100vw;
+  //   min-height: 100vh;
 
   #navbar {
     width: 100vw;
@@ -49,6 +72,7 @@
     margin: 0;
   }
 }
+
 // #######################################################
 // ########################ACCUEIL########################
 // #######################################################
@@ -56,17 +80,21 @@
   background-image: url("../img/legs-434918_1920.jpg");
   background-repeat: no-repeat;
   height: 100vh;
+
   .container {
     margin: 0;
+
     #logo_app {
       margin: 87px 0px 0 100px;
     }
+
     .titre_accueil {
       h1 {
         padding-top: 380px;
         font-family: "baskerville";
         font-size: 6em;
       }
+
       #btn_begin {
         text-decoration: none;
         font-family: "fira_bold";
@@ -77,51 +105,59 @@
         padding: 9px 30px 6px 30px;
         margin-bottom: 40px;
       }
+
       #btn_begin:hover {
         background-color: black;
       }
     }
   }
 }
+
 // #######################################################
 // ####################MENTIONS LEGALES###################
 // #######################################################
 .mention {
 
-    padding-top: 50px;
+  padding-top: 50px;
   background-image: url("../img/fond.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   h1 {
     font-family: "fira_bold";
   }
-  h2{
+
+  h2 {
     font-family: "fira_bold";
-      font-size: 1em;
+    font-size: 1em;
   }
+
   p {
-      text-align: justify;
-      text-justify: inter-word;
+    text-align: justify;
+    text-justify: inter-word;
     font-size: 0.8em;
     font-family: "fira_light";
   }
+
   span {
     font-size: 1em;
     font-family: "fira_bold";
   }
+
   p a {
-      text-decoration: none;
-      font-family: "fira";
-      color: black;
+    text-decoration: none;
+    font-family: "fira";
+    color: black;
   }
+
   p a:hover {
     text-decoration: none;
     font-family: "fira";
     color: #65653b;
-}
+  }
 
   .part2 {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -129,19 +165,22 @@
 // ########################FOOTER#########################
 // #######################################################
 .footer {
-    background-color: #65653b;
-    height: 80px;
-        .infos_footer {
-            padding-top: 1%;
-                .mentions_footer {
-                    text-decoration: none;
-                    font-family: "fira";
-                    color: white;
-                    font-size: 0.7em;
-                }        
-                        .mentions_footer:hover {
-                            color: #c5b480;
-                        }
-                
-        }
+  background-color: #65653b;
+  height: 80px;
+
+  .infos_footer {
+    padding-top: 1%;
+
+    .mentions_footer {
+      text-decoration: none;
+      font-family: "fira";
+      color: white;
+      font-size: 0.7em;
+    }
+
+    .mentions_footer:hover {
+      color: #c5b480;
+    }
+
+  }
 }

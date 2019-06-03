@@ -165,9 +165,7 @@ $(function () {
                     let reponse0 = reponse[0].properties.label;
                     let reponse1 = reponse[1].properties.label;
                     let reponse2 = reponse[2].properties.label;
-                    let reponse3 = reponse[3].properties.label;
-                    let reponse4 = reponse[4].properties.label;
-                    let reponses = [reponse0, reponse1, reponse2, reponse3, reponse4];
+                    
                     displayResults(reponses);
 
                 }
